@@ -8,11 +8,11 @@ https://lottiefiles.com/
 
 ## Screen
 
-<img src="screens/first_screen.png" width="350" height="520" padding="5px" />
+<img src="screens/first_screen.png" width="380" height="600" padding="5px" />
 
-<img src="screens/travel_screen.png" width="350" height="520" padding="5px" />
+<img src="screens/travel_screen.png" width="380" height="600" padding="5px" />
 
-<img src="screens/search_location_screen.png" width="350" height="520" padding="5px" />
+<img src="screens/search_location_screen.png" padding="5px" />
 
 <table>
     <tr>
