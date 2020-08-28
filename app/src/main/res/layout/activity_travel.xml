@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".TravelActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:layout_height="280dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/travelers_cycle_delivery" />
+            app:lottie_rawRes="@raw/bus_pop" />
 
         <TextView
             android:id="@+id/titre"
@@ -31,7 +31,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="40dp"
             android:gravity="center"
-            android:text="@string/lighing_fast_delivery"
+            android:text="@string/travel_with_safety"
             android:textColor="#212121"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -40,10 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
             android:layout_marginEnd="40dp"
             android:gravity="center"
-            android:text="@string/lorem"
+            android:text="@string/lorem2"
             android:textColor="#222222"
             android:textSize="16sp"
             android:textStyle="italic" />
@@ -58,7 +57,7 @@
         android:weightSum="2">
 
         <Button
-            android:id="@+id/btn2_back"
+            android:id="@+id/btn_back"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
@@ -66,11 +65,10 @@
             android:gravity="center"
             android:text="@string/back"
             android:textSize="20sp"
-            android:textStyle="normal"
-            android:visibility="invisible" />
+            android:textStyle="normal" />
 
         <Button
-            android:id="@+id/btn_next"
+            android:id="@+id/btn2_next"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

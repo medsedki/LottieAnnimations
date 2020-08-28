@@ -4,29 +4,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class TravelActivity extends AppCompatActivity implements View.OnClickListener {
 
-    @BindView(R.id.titre)
-    TextView mTextView;
 
-    @BindView(R.id.btn_next)
+    @BindView(R.id.btn_back)
+    Button mBtnBack;
+    @BindView(R.id.btn2_next)
     Button mBtnNext;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_travel);
 
         ButterKnife.bind(this);
 
+        mBtnBack.setOnClickListener(this);
         mBtnNext.setOnClickListener(this);
     }
 
@@ -36,20 +35,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent myIntent;
 
         switch (v.getId()) {
-            case R.id.btn_next:
 
-                //Toast.makeText(this, "Next", Toast.LENGTH_SHORT).show();
+            case R.id.btn_back:
 
-                myIntent = new Intent(this, TravelActivity.class);
-                startActivity(myIntent);
+                onBackPressed();
 
                 break;
 
-        }
-    }
+            case R.id.btn2_next:
 
-    @Override
-    public void onBackPressed() {
-        //super.onBackPressed();
+                myIntent = new Intent(this, LocationActivity.class);
+                startActivity(myIntent);
+
+                break;
+        }
+
     }
 }
